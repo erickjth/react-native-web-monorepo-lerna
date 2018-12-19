@@ -25,7 +25,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -40,13 +40,10 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>NSAppTransportSecurity</key>
-	<!--See http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/ -->
 	<dict>
-    <key>NSAllowsArbitraryLoads</key>
-    <true/>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
 		<key>NSExceptionDomains</key>
 		<dict>
 			<key>localhost</key>
@@ -56,5 +53,26 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-Bold.woff</string>
+		<string>Lato-Bold.woff2</string>
+		<string>Lato-BoldItalic.ttf</string>
+		<string>Lato-BoldItalic.woff</string>
+		<string>Lato-BoldItalic.woff2</string>
+		<string>Lato-Italic.ttf</string>
+		<string>Lato-Italic.woff</string>
+		<string>Lato-Italic.woff2</string>
+		<string>Lato-Light.ttf</string>
+		<string>Lato-Light.woff</string>
+		<string>Lato-Light.woff2</string>
+		<string>Lato-LightItalic.ttf</string>
+		<string>Lato-LightItalic.woff</string>
+		<string>Lato-LightItalic.woff2</string>
+		<string>Lato-Regular.ttf</string>
+		<string>Lato-Regular.woff</string>
+		<string>Lato-Regular.woff2</string>
+	</array>
 </dict>
 </plist>

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { StyleSheet, View } from 'react-native';
-import Text from 'components/src/Text';
-import Heading from 'components/src/Heading';
+import Text from 'shared/src/components/primitives/Text';
+import Heading from 'shared/src/components/primitives/Heading';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Heading textAlign='center' m={10} fontSize={20}>Welcome to React Native!</Heading>
+        <Heading variant='h1' textAlign='center' m={10} fontSize={20}>Welcome to React Native!</Heading>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
       </View>
     );

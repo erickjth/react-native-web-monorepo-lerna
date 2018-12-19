@@ -26,8 +26,7 @@ module.exports = function override(config, env) {
 	}
 
 	babel.include = babel.include.concat([
-		path.resolve(__dirname, '..', 'core'),
-		path.resolve(__dirname, '..', 'components'),
+		path.resolve(__dirname, '..', 'shared'),
 	]);
 
 	// eslint-disable-next-line no-param-reassign

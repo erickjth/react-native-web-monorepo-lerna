@@ -7,9 +7,13 @@
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest"
   },
+  "rnpm": {
+    "assets": [
+      "../shared/assets/fonts"
+    ]
+  },
   "dependencies": {
-    "components": "0.0.1",
-    "core": "0.0.1",
+    "shared": "0.0.1",
     "react": "16.6.3",
     "react-native": "0.57.8"
   },
