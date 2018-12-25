@@ -1,3 +1,3 @@
 import React from 'react';
 
-export default (props) => <p {...props} />
+export default (props) => <p {...props} />;

@@ -14,7 +14,6 @@ import {
 	flexDirection,
 	alignItems,
 	justifyContent,
-	opacity,
 	variant
 } from 'styled-system';
 

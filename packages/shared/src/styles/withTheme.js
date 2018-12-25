@@ -10,19 +10,17 @@ const ThemeProvider = ({ theme = defaultTheme, children }) => {
 		<StyledThemeProvider theme={themes[theme]}>
 			{children}
 		</StyledThemeProvider>
-	)
+	);
 };
 
 const ConnectedThemeProvider = connect(state => ({
 	theme: state.app.theme
 }), null)(ThemeProvider);
 
-const withTheme = (Component) => props => (
+const withTheme = Component => props => (
 	<ConnectedThemeProvider>
 		<Component {...props} />
 	</ConnectedThemeProvider>
 );
 
 export default withTheme;
-
-

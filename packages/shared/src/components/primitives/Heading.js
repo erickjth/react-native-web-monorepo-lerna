@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Text } from 'react-primitives';
-import { headingStyle } from '../../styles'
+import { headingStyle } from '../../styles';
 
 export const Heading = styled(Text)`
 	${headingStyle}
