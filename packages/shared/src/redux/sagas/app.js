@@ -15,7 +15,7 @@ function* init() {
 /**
  * App watcher
  */
-export function* watchApp() {
+export default function* watchApp() {
 	yield all([
 		yield takeLatest(Types.INIT, init),
 	]);
