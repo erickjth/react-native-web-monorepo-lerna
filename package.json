@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "clean": "rm -rf ./packages/*/node_modules",
+    "bootstrap": "lerna bootstrap",
+    "reset": "yarn clean && yarn bootstrap"
   },
   "devDependencies": {
     "lerna": "^3.3.0"
