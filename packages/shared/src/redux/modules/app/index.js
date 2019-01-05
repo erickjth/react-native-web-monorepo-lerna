@@ -7,12 +7,14 @@ const { Types, Creators: Actions } = createActions({
 	init: null,
 	initSuccess: ['options'],
 	initFailure: ['error'],
+	changeTheme: ['theme'],
 }, { prefix: '@APP/' });
 
 export { Types, Actions };
 
 /* ------------- Initial State ------------- */
 export const INITIAL_STATE = {
+	theme: 'light',
 	isInitiated: false,
 };
 
@@ -28,6 +30,10 @@ export default createReducer(INITIAL_STATE, {
 	[Types.INIT_FAILURE]: (state, { error }) => produce(state, draft => {
 		draft.isInitiated = false;
 		draft.error = error;
+	}),
+
+	[Types.CHANGE_THEME]: (state, { theme }) => produce(state, draft => {
+		draft.theme = theme;
 	}),
 });
 /* eslint-enable no-param-reassign */

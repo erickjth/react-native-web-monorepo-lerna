@@ -56,6 +56,12 @@ const GlobalStyle = createGlobalStyle`
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
+
+	#root {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
 `;
 
 export default GlobalStyle;
