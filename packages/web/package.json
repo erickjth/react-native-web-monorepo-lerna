@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "shared": "0.0.1",
     "react": "16.6.3",
     "react-app-rewire-aliases": "^0.2.0",
     "react-app-rewired": "^1.6.2",
@@ -11,10 +10,12 @@
     "react-dom": "16.6.3",
     "react-native-web": "^0.9.9",
     "react-scripts": "2.1.1",
+    "shared": "0.0.1",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0"
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-rallycoding": "github:StephenGrider/ESLint-Rallycoding#3/head"
   },
   "peerDependencies": {
     "babel-eslint": "*",
@@ -27,7 +28,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ./"
   },
   "eslintConfig": {
     "extends": "react-app"

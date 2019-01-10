@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./"
   },
   "rnpm": {
     "assets": [
@@ -22,6 +23,7 @@
     "babel-jest": "23.6.0",
     "eslint": "^5.11.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-rallycoding": "github:StephenGrider/ESLint-Rallycoding#3/head",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
