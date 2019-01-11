@@ -23,7 +23,7 @@ class Home extends Component {
 				px={20}
 				py={20}
 			>
-				<Heading2 textAlign='center' m={10}>
+				<Heading2 m={10}>
 					Welcome to React Native / Web!
 				</Heading2>
 

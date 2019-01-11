@@ -26,6 +26,7 @@ export default {
 		icon: colors.white,
 		text: colors.white,
 		heading: colors.comet,
+		sideBar: colors.wildWatermelon,
 	},
 
 	colorStyles: {

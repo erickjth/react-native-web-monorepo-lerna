@@ -26,6 +26,7 @@ export default {
 		icon: colors.tuna,
 		text: colors.tuna,
 		heading: colors.tuna,
+		sideBar: colors.tuna,
 	},
 
 	colorStyles: {
