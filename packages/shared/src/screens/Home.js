@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import Text, { Heading3 } from '../components/primitives/Text';
+import { connect } from 'react-redux';
+import Text, { Heading3, Heading2 } from '../components/primitives/Text/index.native';
 import View from '../components/primitives/View';
 import Container from '../components/layout/Container';
 import Touchable from '../components/primitives/Touchable';
+import Button from '../components/common/Button';
 import Icon from '../components/common/Icon';
 import Paper from '../components/common/Paper';
+import Section from '../components/common/Section';
+import { Actions } from '../redux/modules/app';
+
+const toggleThemeName = (theme) => (theme === 'light' ? 'dark' : 'light');
 
 class Home extends Component {
 	render() {
+		const { onPressProfile, theme, changeTheme } = this.props;
+
 		return (
 			<Container
 				flex={1}
@@ -15,30 +23,67 @@ class Home extends Component {
 				px={20}
 				py={20}
 			>
-				<Heading3 m={10}>Home</Heading3>
+				<Heading2 textAlign='center' m={10}>
+					Welcome to React Native / Web!
+				</Heading2>
 
-				<View flexDirection='row' justifyContent='flex-start'>
-					<Touchable flex={1}>
-						<Paper variant='red' flex={1}>
-							<Icon name='dashboard' color='white' />
-							<Text variant='white'>Dashboard</Text>
-						</Paper>
-					</Touchable>
+				<Section>
+					<Heading3 m={10}>
+						Theming
+					</Heading3>
 
-					<View flex={1}>
-						<Paper flexDirection='row' justifyContent='center' variant='green'>
-							<Icon name='bookmark' color='white' />
-							<Text variant='white'>Bookmarks</Text>
-						</Paper>
-						<Paper flexDirection='row' justifyContent='center' variant='orange'>
-							<Icon name='assessment' color='white' />
-							<Text variant='white'>Assessments</Text>
-						</Paper>
+					<Text>Current Theme: {theme}</Text>
+
+					<Button
+						text={`Use theme ${toggleThemeName(theme)}`}
+						onPress={() => changeTheme(toggleThemeName(theme))}
+					/>
+				</Section>
+
+				<Section>
+					<Heading3 m={10}>Common Components</Heading3>
+
+					<View flexDirection='row' justifyContent='flex-start'>
+						<Touchable flex={1}>
+							<Paper variant='red' flex={1}>
+								<Icon name='dashboard' color='white' />
+								<Text variant='white'>Dashboard</Text>
+							</Paper>
+						</Touchable>
+
+						<View flex={1}>
+							<Paper flexDirection='row' justifyContent='center' variant='green'>
+								<Icon name='bookmark' color='white' />
+								<Text variant='white'>Bookmarks</Text>
+							</Paper>
+							<Paper flexDirection='row' justifyContent='center' variant='orange'>
+								<Icon name='assessment' color='white' />
+								<Text variant='white'>Assessments</Text>
+							</Paper>
+						</View>
 					</View>
-				</View>
+				</Section>
+
+				<Section>
+					<Heading3 m={10}>
+						Screens
+					</Heading3>
+					<Button
+						text='Profile'
+						onPress={onPressProfile}
+					/>
+				</Section>
 			</Container>
 		);
 	}
 }
 
-export default Home;
+const mapStateToProps = (state) => ({
+	theme: state.app.theme,
+});
+
+const mapDispatchToProps = {
+	changeTheme: Actions.changeTheme,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
