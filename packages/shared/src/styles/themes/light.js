@@ -9,6 +9,12 @@ const colors = {
 	tuna: '#35343D',
 	midGray: '#5F5D70',
 	white: '#FFFFFF',
+
+	wildWatermelon: '#ff6677',
+	mountainMeadow: '#19cb86',
+	burningOrange: '#fe6f3d',
+	scooter: '#43c7d7',
+	sandyBrown: '#f1a758',
 };
 
 
@@ -32,7 +38,10 @@ export default {
 	constainers: {
 		default: {
 			backgroundColor: colors.white,
-		}
+		},
+		primary: {
+			backgroundColor: colors.primary,
+		},
 	},
 
 	texts: {
@@ -50,6 +59,9 @@ export default {
 		},
 		dimmed: {
 			color: colors.dimmed,
+		},
+		white: {
+			color: colors.white,
 		}
 	},
 
@@ -61,6 +73,30 @@ export default {
 		seconday: {
 			color: colors.white,
 			backgroundColor: colors.seconday,
+		},
+	},
+
+	paper: {
+		primary: {
+			backgroundColor: colors.primary,
+		},
+		seconday: {
+			backgroundColor: colors.seconday,
+		},
+		red: {
+			backgroundColor: colors.wildWatermelon,
+		},
+		green: {
+			backgroundColor: colors.mountainMeadow,
+		},
+		blue: {
+			backgroundColor: colors.scooter,
+		},
+		orange: {
+			backgroundColor: colors.burningOrange,
+		},
+		yellow: {
+			backgroundColor: colors.sandyBrown,
 		},
 	},
 };

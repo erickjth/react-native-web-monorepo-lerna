@@ -5,7 +5,6 @@ import Text from '../../primitives/Text';
 import { buttonContainerStyle, buttonTextStyle } from '../../../styles';
 
 const ButtonWrapper = styled(Touchable).attrs({
-	variant: 'primary',
 	px: 3,
 	py: 2,
 	border: 0,
@@ -30,5 +29,9 @@ const Button = ({
 		</ButtonText>
 	</ButtonWrapper>
 );
+
+Button.defaultProps = {
+	variant: 'primary'
+};
 
 export default Button;

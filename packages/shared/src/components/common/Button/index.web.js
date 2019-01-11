@@ -32,4 +32,8 @@ const Button = ({
 	</StyledButton>
 );
 
+Button.defaultProps = {
+	variant: 'primary'
+};
+
 export default Button;

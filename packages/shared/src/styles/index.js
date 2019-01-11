@@ -23,6 +23,7 @@ import {
 
 const viewStyle = css`
 	display: flex;
+	flexDirection: column;
 	${space}
 	${width}
 	${color}
@@ -33,6 +34,9 @@ const viewStyle = css`
 	${flexDirection}
 	${alignItems}
 	${justifyContent}
+	${borders}
+	${borderColor}
+	${borderRadius}
 `;
 
 const constainerStyles = variant({ key: 'constainers' });
@@ -49,6 +53,13 @@ const containerStyle = css`
 	${flexDirection}
 	${alignItems}
 	${justifyContent}
+`;
+
+const mainWrapperStyle = css`
+	flex: 1;
+	${space}
+	${width}
+	${constainerStyles}
 `;
 
 const textStyles = variant({ key: 'texts' });
@@ -100,6 +111,18 @@ const buttonTextStyle = css`
 	${buttonStyleVariant}
 `;
 
+const paperStylesVariant = variant({ key: 'paper' });
+
+const paperStyle = css`
+	margin: 3px;
+	padding: 10px;
+	border: 0;
+	border-radius: 4px;
+	align-items: center;
+	justify-content: center;
+	${paperStylesVariant}
+`;
+
 export {
 	viewStyle,
 	textStyle,
@@ -108,4 +131,6 @@ export {
 	containerStyle,
 	buttonContainerStyle,
 	buttonTextStyle,
+	paperStyle,
+	mainWrapperStyle,
 };
