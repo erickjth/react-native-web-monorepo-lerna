@@ -23,7 +23,7 @@ export default {
 	colors: {
 		...colors,
 		dimmed: colors.midGray,
-		icon: colors.primary,
+		icon: colors.tuna,
 		text: colors.tuna,
 		heading: colors.tuna,
 	},
