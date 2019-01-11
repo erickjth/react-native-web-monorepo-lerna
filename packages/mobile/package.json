@@ -16,6 +16,7 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.57.8",
+    "react-native-vector-icons": "^6.1.0",
     "shared": "0.0.1"
   },
   "devDependencies": {

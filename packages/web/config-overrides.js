@@ -13,6 +13,7 @@ module.exports = function override(config, env) {
 		'styled-components': path.resolve(__dirname, 'node_modules', 'styled-components'),
 		'react-native-web': path.resolve(__dirname, 'node_modules', 'react-native-web'),
 		'react-art': path.resolve(__dirname, 'node_modules', 'react-art'),
+		'material-icons-react': path.resolve(__dirname, 'node_modules', 'material-icons-react'),
 	})(config, env);
 
 	/**

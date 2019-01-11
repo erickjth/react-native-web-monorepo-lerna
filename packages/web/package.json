@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-icons-react": "^1.0.4",
     "react": "16.6.3",
     "react-app-rewire-aliases": "^0.2.0",
     "react-app-rewired": "^1.6.2",
