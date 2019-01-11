@@ -8,7 +8,7 @@ const fonts = {
 	light: 'Lato-Light',
 };
 
-const breakpoints = [32, 48, 64];
+const breakpoints = ['40em', '52em', '64em'];
 
 const space = [0, 4, 8, 16, 32, 64, 128, 256, 512];
 

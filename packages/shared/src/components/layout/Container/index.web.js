@@ -3,7 +3,7 @@ import View from '../../primitives/View';
 import { containerStyle } from '../../../styles';
 
 const Container = styled(View).attrs(() => ({
-	width: 0.8,
+	width: [0.9, 0.5]
 }))`${containerStyle}`;
 
 Container.defaultProps = {
