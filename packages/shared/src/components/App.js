@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Text, { Heading5, Heading2 } from './primitives/Text';
 import Container from './layout/Container';
-import Touchable from './primitives/Touchable';
 import Button from './common/Button';
 import { Actions } from '../redux/modules/app';
 
