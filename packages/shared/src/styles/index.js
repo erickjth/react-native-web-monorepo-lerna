@@ -23,7 +23,7 @@ import {
 
 const viewStyle = css`
 	display: flex;
-	flexDirection: column;
+	flex-direction: column;
 	${space}
 	${width}
 	${color}
@@ -82,14 +82,11 @@ const textStyle = css`
 
 const headingStyle = css`
 	font-family: ${props => props.theme.fonts.bold};
-	color: ${props => props.theme.colors.text};
 	${textStyle}
 `;
 
 const paragraphStyle = css`
 	font-family: ${props => props.theme.fonts.regular};
-	margin-bottom: 10px;
-	color: ${props => props.theme.colors.text};
 	${textStyle}
 `;
 
@@ -124,6 +121,42 @@ const paperStyle = css`
 	${paperStylesVariant}
 `;
 
+
+export const inputBase = css`
+	padding: ${({ large }) => (large && '12px 20px') || '8px 16px'};
+
+	height: ${({ large }) => (large && 44) || 40}px;
+`;
+
+const inputStyleWrapper = css`
+	${space}
+`;
+
+const inputStyle = css`
+	width: 100%;
+	min-height: 40px;
+	height: 40px;
+	padding: 0px;
+	background-color: transparent;
+	font-family: ${props => props.theme.fonts.regular};
+	font-size: 16px;
+	line-height: 16px;
+	color: ${({ theme, error, warning, disabled }) => (
+		(error && theme.colors.error) ||
+		(warning && theme.colors.warning) ||
+		(disabled && theme.colors.dimmed) ||
+		theme.colors.text
+	)};
+	border-bottom-width: 1px;
+	border-bottom-color: ${({ theme, active, error, warning, disabled }) => (
+		(active && theme.colors.primary) ||
+		(error && theme.colors.error) ||
+		(warning && theme.colors.warning) ||
+		(disabled && theme.colors.dimmed) ||
+		theme.colors.primary
+	)};
+`;
+
 export {
 	viewStyle,
 	textStyle,
@@ -134,4 +167,6 @@ export {
 	buttonTextStyle,
 	paperStyle,
 	mainWrapperStyle,
+	inputStyleWrapper,
+	inputStyle,
 };

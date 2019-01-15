@@ -100,4 +100,27 @@ export default {
 			backgroundColor: colors.sandyBrown,
 		},
 	},
+
+	input: {
+		sucesss: {
+			borderColor: colors.sucesss,
+			color: colors.sucesss,
+		},
+		warning: {
+			borderColor: colors.warning,
+			color: colors.warning
+		},
+		error: {
+			borderColor: colors.error,
+			color: colors.error
+		},
+		active: {
+			borderColor: colors.primary,
+			color: colors.primary
+		},
+		dimmed: {
+			borderColor: colors.dimmed,
+			color: colors.dimmed,
+		},
+	}
 };

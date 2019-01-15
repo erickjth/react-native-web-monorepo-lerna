@@ -71,7 +71,7 @@ export default {
 			color: colors.white,
 			backgroundColor: colors.primary,
 		},
-		seconday: {
+		secondary: {
 			color: colors.white,
 			backgroundColor: colors.seconday,
 		},
