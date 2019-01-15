@@ -67,6 +67,7 @@ const textStyles = variant({ key: 'texts' });
 const headingStyles = variant({ key: 'heading' });
 
 const textStyle = css`
+	font-family: ${props => props.theme.fonts.regular};
 	margin: 0;
 	color: ${props => props.theme.colors.text};
 	${space}

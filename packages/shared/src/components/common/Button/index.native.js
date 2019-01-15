@@ -12,26 +12,27 @@ const ButtonWrapper = styled(Touchable).attrs({
 })`${buttonContainerStyle}`;
 
 const ButtonText = styled(Text).attrs({
-	variant: 'primary',
 	fontSize: 2,
 	fontWeight: 'bold',
 	mb: 0,
+	textAlign: 'center',
 })`${buttonTextStyle}`;
 
 const Button = ({
 	onPress,
 	text,
+	variant,
 	...rest,
 }) => (
-	<ButtonWrapper onPress={onPress} {...rest}>
-		<ButtonText>
+	<ButtonWrapper variant={variant} onPress={onPress} {...rest}>
+		<ButtonText variant={variant}>
 			{text}
 		</ButtonText>
 	</ButtonWrapper>
 );
 
 Button.defaultProps = {
-	variant: 'primary'
+	variant: 'primary',
 };
 
 export default Button;

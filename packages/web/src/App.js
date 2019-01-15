@@ -1,17 +1,3 @@
-import React, { Component } from 'react';
-import Application from 'shared/src/components/App';
-import Home from 'shared/src/screens/Home';
-import MainWrapper from 'shared/src/components/layout/MainWrapper';
+import AppNavigator from './navigation/AppNavigator';
 
-class App extends Component {
-	render() {
-		return (
-			<MainWrapper>
-				<Application />
-				<Home />
-			</MainWrapper>
-		);
-	}
-}
-
-export default App;
+export default AppNavigator;

@@ -23,9 +23,10 @@ export default {
 	colors: {
 		...colors,
 		dimmed: colors.comet,
-		icon: colors.primary,
+		icon: colors.white,
 		text: colors.white,
 		heading: colors.comet,
+		sideBar: colors.wildWatermelon,
 	},
 
 	colorStyles: {

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SafeAreaView } from 'react-native';
+import View from '../../primitives/View';
 import { mainWrapperStyle } from '../../../styles';
 
 const StyledSafeAreaView = styled(SafeAreaView)`
@@ -11,11 +12,11 @@ StyledSafeAreaView.defaultProps = {
 	variant: 'default',
 };
 
-const MainWrapper = (props) => {
+const MainWrapper = ({ children, ...props }) => {
 	return (
-		<StyledSafeAreaView
-			{...props}
-		/>
+		<StyledSafeAreaView {...props}>
+			<View flex={1} children={children} />
+		</StyledSafeAreaView>
 	);
 };
 

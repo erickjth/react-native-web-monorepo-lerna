@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { buttonContainerStyle, buttonTextStyle } from '../../../styles';
 
 const StyledButton = styled.button.attrs({
-	variant: 'primary',
 	px: 3,
 	py: 2,
 	border: 0,
@@ -13,6 +12,7 @@ const StyledButton = styled.button.attrs({
 })`
 	${buttonContainerStyle}
 	${buttonTextStyle}
+	cursor: pointer;
 	:active {
 		outline: none;
 		border: none;

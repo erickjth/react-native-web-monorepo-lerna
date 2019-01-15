@@ -10,6 +10,7 @@
     "react-art": "^16.6.3",
     "react-dom": "16.6.3",
     "react-native-web": "^0.9.9",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "shared": "0.0.1",
     "styled-components": "^4.1.2"
@@ -23,7 +24,9 @@
     "eslint": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*"
+	"eslint-plugin-react": "*",
+	"react-router": "*",
+	"history": "*"
   },
   "scripts": {
     "start": "react-app-rewired start",

@@ -5,6 +5,14 @@
 	"env": {
 		"jest": true
 	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true,
+			"modules": true,
+			"classes": true
+		}
+	},
 	"rules": {
 		"react/sort-comp": [1, {
 			"order": [
