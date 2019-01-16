@@ -8,6 +8,7 @@ import Button from '../components/common/Button';
 import Icon from '../components/common/Icon';
 import Paper from '../components/common/Paper';
 import Section from '../components/common/Section';
+import StatusBar from '../components/common/StatusBar';
 import ScrollView from '../components/common/ScrollView';
 import TextInput from '../components/common/Form/TextInput';
 import { Actions } from '../redux/modules/app';
@@ -17,6 +18,11 @@ const toggleThemeName = (theme) => (theme === 'light' ? 'dark' : 'light');
 class Home extends Component {
 	state = { value: '' }
 
+	componentDidUpdate() {
+		const { theme } = this.props;
+		StatusBar.setBarStyle(theme === 'light' ? 'dark-content' : 'light-content');
+	}
+
 	render() {
 		const { onPressProfile, theme, changeTheme } = this.props;
 
@@ -24,10 +30,10 @@ class Home extends Component {
 			<Container
 				flex={1}
 				justifyContent='flex-start'
-				px={20}
-				py={20}
 			>
-				<ScrollView>
+				<ScrollView
+					contentContainerStyle={{ padding: 20 }}
+				>
 					<Heading2 m={10}>
 						Welcome to React Native / Web!
 					</Heading2>

@@ -91,20 +91,18 @@ const paragraphStyle = css`
 `;
 
 const buttonContainerStyle = css`
-	${space}
-	${width}
-	${borders}
-	${borderColor}
-	${borderRadius}
+	padding: 8px 4px;
+	border: 0;
+	border-radius: 4px;
 	${buttonStyleVariant}
 `;
 
 const buttonTextStyle = css`
-	font-family: ${props => props.theme.fonts.regular};
-	${color}
-	${lineHeight}
-	${fontSize}
-	${fontWeight}
+	font-family: ${props => props.theme.fonts.bold};
+	font-size: 16px;
+	margin-bottom: 0;
+	text-align: center;
+	${space}
 	${textAlign}
 	${buttonStyleVariant}
 `;
@@ -119,13 +117,6 @@ const paperStyle = css`
 	align-items: center;
 	justify-content: center;
 	${paperStylesVariant}
-`;
-
-
-export const inputBase = css`
-	padding: ${({ large }) => (large && '12px 20px') || '8px 16px'};
-
-	height: ${({ large }) => (large && 44) || 40}px;
 `;
 
 const inputStyleWrapper = css`

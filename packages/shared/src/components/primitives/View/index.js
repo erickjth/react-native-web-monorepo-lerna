@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import View from './View';
+import { View } from 'react-native';
 import { viewStyle } from '../../../styles';
 
 export const StyledView = styled(View)`
