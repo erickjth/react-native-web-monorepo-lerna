@@ -23,6 +23,7 @@ class SideBar extends PureComponent {
 				<Touchable
 					px={20}
 					py={20}
+					flexDirection='row'
 					onPress={() => history.push('/')}
 				>
 					<Icon name='home' color='white' />
