@@ -1,42 +1,45 @@
 {
-	"name": "mobile",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-		"android": "node node_modules/react-native/local-cli/cli.js run-android",
-		"test": "jest",
-		"lint": "eslint ./"
-	},
-	"rnpm": {
-		"assets": [
-			"../shared/assets/fonts"
-		]
-	},
-	"dependencies": {
-		"react": "16.6.3",
-		"react-native": "0.57.8",
-		"react-native-gesture-handler": "^1.0.12",
-		"react-native-vector-icons": "^6.1.0",
-		"react-navigation": "^3.0.9",
-		"shared": "0.0.1"
-	},
-	"devDependencies": {
-		"babel-eslint": "^10.0.1",
-		"babel-jest": "23.6.0",
-		"eslint": "^5.11.0",
-		"eslint-config-airbnb": "^17.1.0",
-		"eslint-config-rallycoding": "github:StephenGrider/ESLint-Rallycoding#3/head",
-		"eslint-plugin-import": "^2.14.0",
-		"eslint-plugin-jsx-a11y": "^6.1.2",
-		"eslint-plugin-react": "^7.11.1",
-		"eslint-plugin-react-native-globals": "^0.1.2",
-		"jest": "23.6.0",
-		"metro-react-native-babel-preset": "0.48.5",
-		"react-test-renderer": "16.6.3"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "monorepo-mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "monorepo-shared": "0.0.1",
+    "react": "16.13.1",
+    "react-native": "0.63.0",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-safe-area-context": "^3.1.1",
+    "react-native-screens": "^2.9.0",
+    "react-native-vector-icons": "^7.0.0",
+    "react-navigation": "^4.3.9",
+    "react-navigation-stack": "^2.5.1",
+    "react-navigation-tabs": "^2.8.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/runtime": "^7.10.4",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-rallycoding": "github:StephenGrider/ESLint-Rallycoding#3/head",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native-globals": "^0.1.2",
+    "jest": "^26.1.0",
+    "metro-react-native-babel-preset": "^0.60.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }

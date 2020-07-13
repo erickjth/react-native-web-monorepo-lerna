@@ -12,11 +12,9 @@ StyledSafeAreaView.defaultProps = {
 	variant: 'default',
 };
 
-const MainWrapper = ({ children, ...props }) => {
+const MainWrapper = (props) => {
 	return (
-		<StyledSafeAreaView {...props}>
-			<View flex={1} children={children} />
-		</StyledSafeAreaView>
+		<View flex={1} {...props} />
 	);
 };
 

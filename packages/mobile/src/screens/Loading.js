@@ -1,6 +1,6 @@
 import React from 'react';
 import { ActivityIndicator } from 'react-native';
-import Container from 'shared/src/components/layout/Container';
+import Container from 'monorepo-shared/src/components/layout/Container';
 
 export default class LoadingScreen extends React.Component {
 	constructor(props) {

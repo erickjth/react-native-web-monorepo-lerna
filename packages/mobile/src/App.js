@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Platform, KeyboardAvoidingView } from 'react-native';
-import MainWrapper from 'shared/src/components/layout/MainWrapper';
+import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
+import MainWrapper from 'monorepo-shared/src/components/layout/MainWrapper';
 import AppNavigator from './navigation/AppNavigator';
 
-export default class App extends Component {
-	render() {
-		return (
+export default function App() {
+	return (
+		<SafeAreaProvider initialMetrics={initialWindowMetrics}>
 			<MainWrapper>
 				<AppNavigator />
 				<KeyboardAvoidingView
 					behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
 				/>
 			</MainWrapper>
-		);
-	}
+		</SafeAreaProvider>
+	);
 }

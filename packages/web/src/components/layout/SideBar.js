@@ -1,10 +1,10 @@
 import React, { PureComponent } from 'react';
 import { withRouter } from 'react-router';
 import styled from 'styled-components';
-import View from 'shared/src/components/primitives/View';
-import Text from 'shared/src/components/primitives/Text';
-import Touchable from 'shared/src/components/primitives/Touchable';
-import Icon from 'shared/src//components/common/Icon';
+import View from 'monorepo-shared/src/components/primitives/View';
+import Text from 'monorepo-shared/src/components/primitives/Text';
+import Touchable from 'monorepo-shared/src/components/primitives/Touchable';
+import Icon from 'monorepo-shared/src//components/common/Icon';
 
 const Wrapper = styled(View)`
 	padding-top: 40px;

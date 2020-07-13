@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import setup from 'shared/src/setup';
+import setup from 'monorepo-shared/src/setup';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

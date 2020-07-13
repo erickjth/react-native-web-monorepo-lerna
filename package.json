@@ -9,6 +9,6 @@
     "reset": "yarn clean && yarn clean-locks && yarn bootstrap"
   },
   "devDependencies": {
-    "lerna": "^3.3.0"
+    "lerna": "^3.22.1"
   }
 }

@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import Text from 'shared/src/components/primitives/Text';
+import Text from 'monorepo-shared/src/components/primitives/Text';
 
 class HeaderTitle extends PureComponent {
 	render() {

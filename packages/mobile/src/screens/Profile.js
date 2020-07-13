@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
-import Container from 'shared/src/components/layout/Container';
-import Text from 'shared/src/components/primitives/Text';
+import Container from 'monorepo-shared/src/components/layout/Container';
+import Text from 'monorepo-shared/src/components/primitives/Text';
 
 export default class ProfileScreen extends PureComponent {
 	static navigationOptions = {
